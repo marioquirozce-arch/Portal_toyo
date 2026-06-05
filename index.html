@@ -3,41 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TKINOV | Soluciones Tecnologicas Integrales</title>
+  <title>Toyo Soluciones Tecnologicas | Computo, impresion, movilidad y servicios administrados</title>
   <meta
     name="description"
-    content="TKINOV ofrece soluciones tecnologicas integrales para empresas, gobierno y sectores estrategicos en Mexico."
+    content="Toyo es una comercializadora tecnologica mexicana especializada en equipo de computo, impresion, movilidad empresarial, telefonia movil, licenciamiento y servicios administrados para empresas y gobierno."
   >
-  <link rel="canonical" href="https://www.tkinov.com/">
-  <meta property="og:url" content="https://www.tkinov.com/">
-  <meta property="og:title" content="TKINOV | Soluciones Tecnologicas Integrales">
+  <meta
+    name="keywords"
+    content="comercializadora tecnologica, equipo de computo empresarial, impresion administrada, telefonia movil empresarial, tablets empresariales, Samsung Knox, servicios administrados de tecnologia, arrendamiento tecnologico, soluciones tecnologicas para gobierno"
+  >
+  <link rel="canonical" href="https://www.toyocm.com.mx/">
+  <meta property="og:url" content="https://www.toyocm.com.mx/">
+  <meta property="og:title" content="Toyo Soluciones Tecnologicas | Tecnologia administrada para empresas">
   <meta
     property="og:description"
-    content="TKINOV ofrece soluciones tecnologicas integrales para empresas, gobierno y sectores estrategicos en Mexico."
+    content="Suministro, integracion, configuracion, distribucion y administracion de soluciones tecnologicas para empresas, instituciones y gobierno."
   >
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="TKINOV">
+  <meta property="og:site_name" content="Toyo Soluciones Tecnologicas">
+  <meta property="og:image" content="https://www.toyocm.com.mx/assets/toyo-hero-tech.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="TKINOV | Soluciones Tecnologicas Integrales">
+  <meta name="twitter:title" content="Toyo Soluciones Tecnologicas">
   <meta
     name="twitter:description"
-    content="TKINOV ofrece soluciones tecnologicas integrales para empresas, gobierno y sectores estrategicos en Mexico."
+    content="Tecnologia, equipos y servicios administrados para empresas e instituciones."
   >
+  <meta name="twitter:image" content="https://www.toyocm.com.mx/assets/toyo-hero-tech.png">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "TKINOV",
-      "url": "https://www.tkinov.com/",
-      "logo": "https://www.tkinov.com/assets/Logo_tkinov.png",
-      "email": "contacto@tkinov.com",
-      "sameAs": [],
+      "name": "Toyo Soluciones Tecnologicas",
+      "legalName": "TOYO COMERCIALIZADORA DEL MAYAB, S. de R.L. de C.V.",
+      "url": "https://www.toyocm.com.mx/",
+      "email": "contacto@toyocm.com.mx",
+      "knowsAbout": ["Lenovo", "Ivanti", "computo empresarial", "gestion de endpoints", "servicios administrados de tecnologia"],
+      "areaServed": "MX",
       "contactPoint": [
         {
           "@type": "ContactPoint",
           "contactType": "sales",
-          "telephone": "+52-56-5224-5177",
-          "email": "mquiroz@tkinov.com",
+          "email": "contacto@toyocm.com.mx",
           "areaServed": "MX",
           "availableLanguage": ["es"]
         }
@@ -57,14 +63,15 @@
       theme: {
         extend: {
           colors: {
-            tk: {
-              blue: "#1a3a6b",
-              mid: "#2d5fa0",
-              light: "#4a7fc7",
-              steel: "#6b7d94",
-              gray: "#3a3f47",
-              silver: "#e8ecf0",
-              ice: "#f4f6f9",
+            toyo: {
+              navy: "#13345d",
+              blue: "#1f5d99",
+              cyan: "#0e9fbc",
+              green: "#1f8a70",
+              steel: "#667789",
+              graphite: "#303844",
+              silver: "#e7edf2",
+              ice: "#f5f8fa",
               white: "#ffffff"
             }
           }
@@ -90,7 +97,7 @@
 
     .fade-up {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateY(26px);
       transition: opacity 0.7s ease, transform 0.7s ease;
     }
 
@@ -104,103 +111,54 @@
       -webkit-backdrop-filter: blur(16px);
     }
 
-    .gradient-line {
-      background: linear-gradient(90deg, #1a3a6b, #4a7fc7, transparent);
-      height: 2px;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-6px); }
-    }
-
-    .float-anim {
-      animation: float 4s ease-in-out infinite;
-    }
-
-    .hero-grid {
+    .hero-media {
+      min-height: 520px;
       background-image:
-        linear-gradient(rgba(26, 58, 107, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(26, 58, 107, 0.04) 1px, transparent 1px);
-      background-size: 60px 60px;
+        linear-gradient(90deg, rgba(19, 52, 93, 0.96) 0%, rgba(19, 52, 93, 0.88) 42%, rgba(19, 52, 93, 0.36) 68%, rgba(19, 52, 93, 0.1) 100%),
+        url("./assets/toyo-hero-tech.png");
+      background-position: center;
+      background-size: cover;
     }
 
-    .brand-logo {
-      width: 148px;
-      height: auto;
-      display: block;
-    }
-
-    .brand-logo--footer {
-      width: 132px;
-    }
-
-    .hero-logo-wrap {
+    .brand-mark {
       display: inline-flex;
       align-items: center;
-      gap: 16px;
-      padding: 12px 18px;
-      margin-bottom: 22px;
-      border: 1px solid rgba(26, 58, 107, 0.12);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.75);
-      box-shadow: 0 16px 40px rgba(26, 58, 107, 0.08);
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: #13345d;
+      color: #ffffff;
+      font-weight: 800;
     }
 
-    .hero-logo {
-      width: 180px;
-      max-width: 46vw;
-      height: auto;
-      display: block;
+    .brand-word {
+      line-height: 1;
     }
 
-    .hero-logo-note {
-      font-size: 0.75rem;
+    .section-kicker {
+      font-size: 0.76rem;
       font-weight: 700;
-      letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: #2d5fa0;
-      white-space: nowrap;
+      color: #0e9fbc;
+    }
+
+    .metric-band {
+      background: linear-gradient(90deg, #13345d, #1f5d99);
     }
 
     .contact-input {
       width: 100%;
-      padding: 0.95rem 1.25rem;
+      padding: 0.95rem 1.1rem;
       border-radius: 0.75rem;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: white;
-      font-size: 0.95rem;
+      border: 1px solid rgba(231, 237, 242, 0.7);
+      color: #303844;
       outline: none;
     }
 
-    .contact-input::placeholder {
-      color: rgba(255, 255, 255, 0.5);
-    }
-
     .contact-input:focus {
-      border-color: rgba(255, 255, 255, 0.45);
-    }
-
-    .contact-status {
-      margin-top: 1rem;
-      font-size: 0.9rem;
-    }
-
-    .contact-status--success {
-      color: rgba(233, 255, 239, 0.95);
-    }
-
-    .contact-status--error {
-      color: rgba(255, 214, 214, 0.95);
-    }
-
-    .sr-only-field {
-      position: absolute;
-      left: -9999px;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
+      border-color: #0e9fbc;
+      box-shadow: 0 0 0 4px rgba(14, 159, 188, 0.12);
     }
 
     .whatsapp-float {
@@ -211,727 +169,386 @@
       display: inline-flex;
       align-items: center;
       gap: 0.75rem;
-      padding: 0.95rem 1.1rem;
+      padding: 0.9rem 1.05rem;
       border-radius: 999px;
-      background: linear-gradient(135deg, #1f9d55, #25d366);
+      background: #1f8a70;
       color: #ffffff;
       text-decoration: none;
-      box-shadow: 0 20px 45px rgba(20, 85, 48, 0.28);
+      box-shadow: 0 18px 42px rgba(31, 138, 112, 0.28);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .whatsapp-float:hover {
       transform: translateY(-2px);
-      box-shadow: 0 24px 52px rgba(20, 85, 48, 0.34);
+      box-shadow: 0 24px 52px rgba(31, 138, 112, 0.34);
     }
 
     .whatsapp-float__icon {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 2.6rem;
-      height: 2.6rem;
+      width: 2.4rem;
+      height: 2.4rem;
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.16);
     }
 
-    .whatsapp-float__text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.1;
-    }
-
-    .whatsapp-float__label {
-      font-size: 0.72rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      opacity: 0.8;
-    }
-
-    .whatsapp-float__number {
-      font-size: 0.96rem;
-      font-weight: 700;
-    }
-
-    @media (max-width: 640px) {
-      .hero-logo-wrap {
-        width: 100%;
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-        border-radius: 24px;
+    @media (max-width: 768px) {
+      .hero-media {
+        min-height: auto;
+        background-image:
+          linear-gradient(180deg, rgba(19, 52, 93, 0.96) 0%, rgba(19, 52, 93, 0.9) 58%, rgba(19, 52, 93, 0.7) 100%),
+          url("./assets/toyo-hero-tech.png");
       }
 
-      .hero-logo-note {
-        white-space: normal;
-        text-align: center;
-      }
-
-      .whatsapp-float {
-        right: 1rem;
-        bottom: 1rem;
-        padding: 0.9rem;
-      }
-
-      .whatsapp-float__text {
+      .whatsapp-float span:last-child {
         display: none;
       }
     }
   </style>
 </head>
-<body class="h-full overflow-auto bg-tk-white text-tk-gray">
+<body class="h-full overflow-auto bg-toyo-white text-toyo-graphite">
   <nav
     id="mainNav"
-    class="fixed top-0 left-0 z-50 w-full transition-all duration-300"
-    style="background: rgba(255, 255, 255, 0.85);"
+    class="fixed left-0 top-0 z-50 w-full transition-all duration-300"
+    style="background: rgba(255, 255, 255, 0.9);"
   >
-    <div class="nav-blur w-full">
+    <div class="nav-blur w-full border-b border-toyo-silver/60">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#home" class="flex items-center gap-3" aria-label="Ir al inicio de TKINOV">
-          <img
-            src="./assets/Logo_tkinov.png"
-            alt="Logo de TKINOV"
-            class="brand-logo"
-          >
+        <a href="#home" class="flex items-center gap-3" aria-label="Ir al inicio de Toyo">
+          <span class="brand-mark">T</span>
+          <span class="brand-word">
+            <span class="block text-lg font-extrabold text-toyo-navy">TOYO</span>
+            <span class="block text-xs font-semibold uppercase text-toyo-steel">Soluciones Tecnologicas</span>
+          </span>
         </a>
-        <div class="hidden items-center gap-8 text-sm font-medium text-tk-gray md:flex">
-          <a href="#home" class="transition hover:text-tk-blue">Inicio</a>
-          <a href="#nosotros" class="transition hover:text-tk-blue">Nosotros</a>
-          <a href="#soluciones" class="transition hover:text-tk-blue">Soluciones</a>
-          <a href="#capacidades" class="transition hover:text-tk-blue">Capacidades</a>
-          <a href="#ecosistema" class="transition hover:text-tk-blue">Ecosistema</a>
-          <a
-            href="#contacto"
-            class="rounded-md bg-tk-blue px-5 py-2 text-white transition hover:bg-tk-mid"
-          >Contacto</a>
+        <div class="hidden items-center gap-7 text-sm font-semibold text-toyo-graphite md:flex">
+          <a href="#home" class="transition hover:text-toyo-blue">Inicio</a>
+          <a href="#nosotros" class="transition hover:text-toyo-blue">Nosotros</a>
+          <a href="#soluciones" class="transition hover:text-toyo-blue">Soluciones</a>
+          <a href="#administrados" class="transition hover:text-toyo-blue">Servicios administrados</a>
+          <a href="#sectores" class="transition hover:text-toyo-blue">Sectores</a>
+          <a href="#contacto" class="rounded-md bg-toyo-navy px-5 py-2 text-white transition hover:bg-toyo-blue">Contacto</a>
         </div>
         <button
           id="mobileMenuBtn"
-          class="text-tk-blue md:hidden"
-          aria-label="Abrir menú"
+          class="text-toyo-navy md:hidden"
+          aria-label="Abrir menu"
           aria-expanded="false"
         >
           <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
         </button>
       </div>
     </div>
-    <div
-      id="mobileMenu"
-      class="hidden border-t border-tk-silver bg-white px-6 py-4 text-sm font-medium md:hidden"
-    >
+    <div id="mobileMenu" class="hidden border-b border-toyo-silver bg-white px-6 py-4 text-sm font-semibold md:hidden">
       <div class="space-y-3">
-        <a href="#home" class="block py-2 text-tk-gray hover:text-tk-blue">Inicio</a>
-        <a href="#nosotros" class="block py-2 text-tk-gray hover:text-tk-blue">Nosotros</a>
-        <a href="#soluciones" class="block py-2 text-tk-gray hover:text-tk-blue">Soluciones</a>
-        <a href="#capacidades" class="block py-2 text-tk-gray hover:text-tk-blue">Capacidades</a>
-        <a href="#ecosistema" class="block py-2 text-tk-gray hover:text-tk-blue">Ecosistema</a>
-        <a
-          href="#contacto"
-          class="block rounded-md bg-tk-blue py-2 text-center text-white"
-        >Contacto</a>
+        <a href="#home" class="block py-2 text-toyo-graphite hover:text-toyo-blue">Inicio</a>
+        <a href="#nosotros" class="block py-2 text-toyo-graphite hover:text-toyo-blue">Nosotros</a>
+        <a href="#soluciones" class="block py-2 text-toyo-graphite hover:text-toyo-blue">Soluciones</a>
+        <a href="#administrados" class="block py-2 text-toyo-graphite hover:text-toyo-blue">Servicios administrados</a>
+        <a href="#sectores" class="block py-2 text-toyo-graphite hover:text-toyo-blue">Sectores</a>
+        <a href="#contacto" class="block rounded-md bg-toyo-navy py-2 text-center text-white">Contacto</a>
       </div>
     </div>
   </nav>
 
-  <section
-    id="home"
-    class="hero-grid relative overflow-hidden pb-20 pt-32 md:pb-32 md:pt-40"
-  >
-    <div class="absolute inset-0 bg-gradient-to-br from-tk-ice via-white to-tk-silver opacity-80"></div>
-    <div class="absolute right-10 top-20 h-72 w-72 rounded-full bg-tk-blue opacity-[0.03] blur-3xl"></div>
-    <div class="absolute bottom-10 left-10 h-96 w-96 rounded-full bg-tk-mid opacity-[0.04] blur-3xl"></div>
-    <div class="relative mx-auto max-w-7xl px-6">
-      <div class="max-w-3xl fade-up">
-        <div class="hero-logo-wrap">
-          <img
-            src="./assets/Logo_tkinov.png"
-            alt="Logo de TKINOV"
-            class="hero-logo"
-          >
-          <span class="hero-logo-note">Portal corporativo</span>
+  <header id="home" class="hero-media relative overflow-hidden pt-28">
+    <div class="mx-auto flex max-w-7xl items-center px-6 py-20 md:min-h-[520px] md:py-28">
+      <div class="max-w-3xl text-white fade-up">
+        <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase">
+          <i data-lucide="monitor-cog" style="width: 15px; height: 15px;"></i>
+          Comercializacion · Integracion · Administracion
         </div>
-        <div
-          class="mb-6 inline-flex items-center gap-2 rounded-full border border-tk-blue/10 bg-tk-blue/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wide text-tk-blue"
-        >
-          <i data-lucide="shield-check" style="width: 14px; height: 14px;"></i>
-          Tecnología · Integración · Innovación
-        </div>
-        <h1
-          id="heroTitle"
-          class="font-serif-display mb-6 text-4xl leading-[1.08] text-tk-blue md:text-6xl lg:text-7xl"
-        >
-          Soluciones tecnológicas integrales para empresas, gobierno y sectores estratégicos.
+        <h1 class="font-serif-display mb-6 text-4xl leading-tight md:text-6xl lg:text-7xl">
+          Tecnologia, equipos y servicios administrados para empresas e instituciones
         </h1>
-        <p
-          id="heroSubtitle"
-          class="mb-10 max-w-2xl text-lg leading-relaxed text-tk-steel md:text-xl"
-        >
-          Integramos tecnología, operación y experiencia para desarrollar, implementar y escalar proyectos con impacto real.
+        <p class="mb-10 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
+          Toyo integra soluciones de computo, impresion, movilidad, telefonia, licenciamiento y soporte para ayudar a las organizaciones a operar con mayor eficiencia, control y continuidad.
         </p>
         <div class="flex flex-wrap gap-4">
-          <a
-            href="#soluciones"
-            class="rounded-md bg-tk-blue px-7 py-3.5 font-medium text-white shadow-lg shadow-tk-blue/20 transition-all hover:bg-tk-mid"
-          >Conocer soluciones</a>
-          <a
-            href="#contacto"
-            class="rounded-md border-2 border-tk-blue/20 px-7 py-3.5 font-medium text-tk-blue transition-all hover:bg-tk-blue/5"
-          >Hablar con un asesor</a>
+          <a href="#soluciones" class="rounded-md bg-toyo-cyan px-7 py-3.5 font-bold text-white shadow-lg transition hover:bg-toyo-green">Conocer soluciones</a>
+          <a href="#contacto" class="rounded-md border-2 border-white/40 px-7 py-3.5 font-bold text-white transition hover:bg-white/10">Solicitar cotizacion</a>
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section class="bg-tk-blue py-16">
-    <div class="mx-auto max-w-7xl px-6">
-      <div class="grid grid-cols-2 gap-6 md:grid-cols-5 md:gap-4">
-        <div class="group fade-up text-center text-white/90">
-          <div class="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-xl bg-white/10 transition group-hover:bg-white/20">
-            <i data-lucide="network" style="width: 26px; height: 26px; color: white;"></i>
-          </div>
-          <p class="text-sm font-medium">Integración tecnológica</p>
-        </div>
-        <div class="group fade-up text-center text-white/90" style="transition-delay: 0.08s;">
-          <div class="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-xl bg-white/10 transition group-hover:bg-white/20">
-            <i data-lucide="code-2" style="width: 26px; height: 26px; color: white;"></i>
-          </div>
-          <p class="text-sm font-medium">Desarrollo de software</p>
-        </div>
-        <div class="group fade-up text-center text-white/90" style="transition-delay: 0.16s;">
-          <div class="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-xl bg-white/10 transition group-hover:bg-white/20">
-            <i data-lucide="radio-tower" style="width: 26px; height: 26px; color: white;"></i>
-          </div>
-          <p class="text-sm font-medium">Telecomunicaciones y movilidad</p>
-        </div>
-        <div class="group fade-up text-center text-white/90" style="transition-delay: 0.24s;">
-          <div class="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-xl bg-white/10 transition group-hover:bg-white/20">
-            <i data-lucide="package" style="width: 26px; height: 26px; color: white;"></i>
-          </div>
-          <p class="text-sm font-medium">Comercialización de tecnología</p>
-        </div>
-        <div class="group fade-up col-span-2 text-center text-white/90 md:col-span-1" style="transition-delay: 0.32s;">
-          <div class="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-xl bg-white/10 transition group-hover:bg-white/20">
-            <i data-lucide="settings" style="width: 26px; height: 26px; color: white;"></i>
-          </div>
-          <p class="text-sm font-medium">Implementación y soporte</p>
-        </div>
+  <section class="metric-band py-14">
+    <div class="mx-auto grid max-w-7xl gap-5 px-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="fade-up text-white">
+        <i data-lucide="laptop" style="width: 28px; height: 28px;"></i>
+        <p class="mt-3 text-sm font-semibold">Computo empresarial</p>
+      </div>
+      <div class="fade-up text-white" style="transition-delay: 0.06s;">
+        <i data-lucide="printer" style="width: 28px; height: 28px;"></i>
+        <p class="mt-3 text-sm font-semibold">Impresion administrada</p>
+      </div>
+      <div class="fade-up text-white" style="transition-delay: 0.12s;">
+        <i data-lucide="smartphone" style="width: 28px; height: 28px;"></i>
+        <p class="mt-3 text-sm font-semibold">Movilidad y telefonia</p>
+      </div>
+      <div class="fade-up text-white" style="transition-delay: 0.18s;">
+        <i data-lucide="headphones" style="width: 28px; height: 28px;"></i>
+        <p class="mt-3 text-sm font-semibold">Soporte operativo</p>
       </div>
     </div>
   </section>
 
   <section id="nosotros" class="bg-white py-24">
     <div class="mx-auto max-w-7xl px-6">
-      <div class="fade-up mb-4">
-        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-tk-mid">Nosotros</span>
-      </div>
-      <div class="grid items-start gap-16 lg:grid-cols-2">
+      <div class="grid gap-14 lg:grid-cols-[1.05fr_0.95fr]">
         <div class="fade-up">
-          <h2 class="font-serif-display mb-6 text-3xl leading-tight text-tk-blue md:text-5xl">
-            Una empresa mexicana con vocación de integración tecnológica.
+          <span class="section-kicker">Nosotros</span>
+          <h2 class="font-serif-display mt-4 max-w-2xl text-3xl leading-tight text-toyo-navy md:text-5xl">
+            Una comercializadora tecnologica mexicana con enfoque institucional.
           </h2>
-          <p
-            id="aboutText"
-            class="mb-8 text-lg leading-relaxed text-tk-steel"
-          >
-            TKINOV es una empresa mexicana especializada en integrar tecnología, desarrollo, conectividad y operación para proyectos empresariales, gubernamentales y sectores estratégicos. Integramos consultoría estratégica, desarrollo de software, comercialización de tecnología y operación de proyectos para generar resultados medibles en organizaciones del sector público, privado y financiero.
-          </p>
-          <div class="gradient-line mb-8 w-24"></div>
-          <p class="leading-relaxed text-tk-steel">
-            Nuestro enfoque conecta la visión estratégica con la ejecución operativa, integrando talento, tecnología y procesos para proyectos escalables y sostenibles.
-          </p>
         </div>
-        <div class="fade-up space-y-6" style="transition-delay: 0.15s;">
-          <div class="rounded-xl border border-tk-silver/60 bg-tk-ice p-8">
-            <div class="mb-3 flex items-center gap-3">
-              <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-tk-blue/10">
-                <i data-lucide="target" style="width: 20px; height: 20px; color: #1a3a6b;"></i>
-              </div>
-              <h3 class="text-lg font-semibold text-tk-blue">Misión</h3>
-            </div>
-            <p id="missionText" class="leading-relaxed text-tk-steel">
-              Proveer soluciones tecnológicas integrales que impulsen la productividad, eficiencia y competitividad de nuestros clientes a través de la innovación, la operación y la excelencia en la ejecución.
-            </p>
-          </div>
-          <div class="rounded-xl border border-tk-silver/60 bg-tk-ice p-8">
-            <div class="mb-3 flex items-center gap-3">
-              <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-tk-blue/10">
-                <i data-lucide="eye" style="width: 20px; height: 20px; color: #1a3a6b;"></i>
-              </div>
-              <h3 class="text-lg font-semibold text-tk-blue">Visión</h3>
-            </div>
-            <p id="visionText" class="leading-relaxed text-tk-steel">
-              Ser el socio tecnológico de referencia en México, reconocido por nuestra capacidad de integrar, operar y escalar proyectos tecnológicos complejos con impacto real en cada sector que atendemos.
-            </p>
-          </div>
-          <div class="rounded-xl border border-tk-silver/60 bg-tk-ice p-8">
-            <div class="mb-3 flex items-center gap-3">
-              <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-tk-blue/10">
-                <i data-lucide="puzzle" style="width: 20px; height: 20px; color: #1a3a6b;"></i>
-              </div>
-              <h3 class="text-lg font-semibold text-tk-blue">Enfoque</h3>
-            </div>
-            <p class="leading-relaxed text-tk-steel">
-              Integramos tecnología, talento y operación en un solo ecosistema. No solo vendemos soluciones: las diseñamos, implementamos, operamos y escalamos.
-            </p>
-          </div>
+        <div class="fade-up space-y-5 text-lg leading-relaxed text-toyo-steel" style="transition-delay: 0.12s;">
+          <p>
+            Toyo es una comercializadora tecnologica mexicana especializada en el suministro, integracion y administracion de soluciones tecnologicas para empresas, instituciones y gobierno.
+          </p>
+          <p>
+            Nuestro enfoque combina productos de marcas lideres, servicios de implementacion, soporte operativo y esquemas comerciales flexibles para facilitar la adopcion de tecnologia en organizaciones de distintos tamanos.
+          </p>
+          <p>
+            Formamos parte de un grupo empresarial con experiencia en integracion tecnologica, telecomunicaciones, desarrollo de software y operacion de proyectos especializados, lo que nos permite ofrecer soluciones mas completas que una comercializadora tradicional.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="soluciones" class="bg-tk-ice py-24">
+  <section class="bg-toyo-ice py-24">
     <div class="mx-auto max-w-7xl px-6">
-      <div class="fade-up mb-4">
-        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-tk-mid">Soluciones</span>
+      <div class="grid items-center gap-12 lg:grid-cols-2">
+        <div class="fade-up">
+          <span class="section-kicker">Propuesta de valor</span>
+          <h2 class="font-serif-display mt-4 text-3xl leading-tight text-toyo-navy md:text-5xl">
+            Mas que venta de equipos: tecnologia administrada para tu operacion.
+          </h2>
+        </div>
+        <div class="fade-up rounded-lg border border-toyo-silver bg-white p-8 text-toyo-steel shadow-sm" style="transition-delay: 0.12s;">
+          <p class="mb-5 text-lg leading-relaxed">
+            En Toyo no solo entregamos equipos. Ayudamos a nuestros clientes a seleccionar, implementar, configurar, administrar y mantener la tecnologia que necesitan para operar mejor.
+          </p>
+          <p class="leading-relaxed">
+            Desde una laptop, una impresora o una linea movil, hasta proyectos integrales de equipamiento, movilidad empresarial, servicios administrados y soporte, nuestro objetivo es simplificar la adquisicion y operacion tecnologica.
+          </p>
+        </div>
       </div>
-      <h2 class="font-serif-display fade-up mb-4 max-w-2xl text-3xl leading-tight text-tk-blue md:text-5xl">
-        Soluciones diseñadas para sectores estratégicos.
-      </h2>
-      <p class="fade-up mb-14 max-w-2xl text-lg text-tk-steel">
-        Cada solución se adapta a las necesidades operativas, regulatorias y tecnológicas de nuestros clientes.
-      </p>
+    </div>
+  </section>
+
+  <section id="soluciones" class="bg-white py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="fade-up mb-14 max-w-3xl">
+        <span class="section-kicker">Soluciones principales</span>
+        <h2 class="font-serif-display mt-4 text-3xl leading-tight text-toyo-navy md:text-5xl">
+          Equipamiento, conectividad y servicios para operar con continuidad.
+        </h2>
+      </div>
       <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        <div class="group fade-up rounded-xl border border-tk-silver/60 bg-white p-8 transition-all hover:shadow-lg hover:shadow-tk-blue/5">
-          <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-tk-blue/10 transition-all group-hover:bg-tk-blue group-hover:text-white">
-            <i data-lucide="radio-tower" class="text-tk-blue transition group-hover:text-white" style="width: 22px; height: 22px;"></i>
-          </div>
-          <h3 class="mb-2 text-lg font-semibold text-tk-blue">Telecomunicaciones y movilidad</h3>
-          <p class="text-sm leading-relaxed text-tk-steel">Conectividad, redes, infraestructura móvil y soluciones de comunicación empresarial.</p>
-        </div>
-        <div class="group fade-up rounded-xl border border-tk-silver/60 bg-white p-8 transition-all hover:shadow-lg hover:shadow-tk-blue/5" style="transition-delay: 0.06s;">
-          <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-tk-blue/10 transition-all group-hover:bg-tk-blue">
-            <i data-lucide="code-2" class="text-tk-blue transition group-hover:text-white" style="width: 22px; height: 22px;"></i>
-          </div>
-          <h3 class="mb-2 text-lg font-semibold text-tk-blue">Desarrollo de software y plataformas</h3>
-          <p class="text-sm leading-relaxed text-tk-steel">Aplicaciones a la medida, plataformas web y móviles, integración de sistemas.</p>
-        </div>
-        <div class="group fade-up rounded-xl border border-tk-silver/60 bg-white p-8 transition-all hover:shadow-lg hover:shadow-tk-blue/5" style="transition-delay: 0.12s;">
-          <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-tk-blue/10 transition-all group-hover:bg-tk-blue">
-            <i data-lucide="landmark" class="text-tk-blue transition group-hover:text-white" style="width: 22px; height: 22px;"></i>
-          </div>
-          <h3 class="mb-2 text-lg font-semibold text-tk-blue">Soluciones para gobierno</h3>
-          <p class="text-sm leading-relaxed text-tk-steel">Digitalización, automatización de procesos, identidad y plataformas de gestión pública.</p>
-        </div>
-        <div class="group fade-up rounded-xl border border-tk-silver/60 bg-white p-8 transition-all hover:shadow-lg hover:shadow-tk-blue/5" style="transition-delay: 0.18s;">
-          <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-tk-blue/10 transition-all group-hover:bg-tk-blue">
-            <i data-lucide="bar-chart-3" class="text-tk-blue transition group-hover:text-white" style="width: 22px; height: 22px;"></i>
-          </div>
-          <h3 class="mb-2 text-lg font-semibold text-tk-blue">Soluciones para sector financiero</h3>
-          <p class="text-sm leading-relaxed text-tk-steel">Plataformas de operación, seguridad, analítica y cumplimiento regulatorio.</p>
-        </div>
-        <div class="group fade-up rounded-xl border border-tk-silver/60 bg-white p-8 transition-all hover:shadow-lg hover:shadow-tk-blue/5" style="transition-delay: 0.24s;">
-          <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-tk-blue/10 transition-all group-hover:bg-tk-blue">
-            <i data-lucide="map-pin" class="text-tk-blue transition group-hover:text-white" style="width: 22px; height: 22px;"></i>
-          </div>
-          <h3 class="mb-2 text-lg font-semibold text-tk-blue">Rastreo y administración de flotillas</h3>
-          <p class="text-sm leading-relaxed text-tk-steel">GPS, telemetría, control logístico y monitoreo en tiempo real para operaciones de campo.</p>
-        </div>
-        <div class="group fade-up rounded-xl border border-tk-silver/60 bg-white p-8 transition-all hover:shadow-lg hover:shadow-tk-blue/5" style="transition-delay: 0.30s;">
-          <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-tk-blue/10 transition-all group-hover:bg-tk-blue">
-            <i data-lucide="scan-face" class="text-tk-blue transition group-hover:text-white" style="width: 22px; height: 22px;"></i>
-          </div>
-          <h3 class="mb-2 text-lg font-semibold text-tk-blue">Digitalización, identidad y automatización</h3>
-          <p class="text-sm leading-relaxed text-tk-steel">Biometría, identidad digital, automatización de procesos y transformación operativa.</p>
-        </div>
-        <div class="group fade-up rounded-xl bg-tk-blue p-8 transition-all hover:bg-tk-mid md:col-span-2 lg:col-span-1" style="transition-delay: 0.36s;">
-          <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-white/15">
-            <i data-lucide="server" style="width: 22px; height: 22px; color: white;"></i>
-          </div>
-          <h3 class="mb-2 text-lg font-semibold text-white">Comercialización e integración</h3>
-          <p class="text-sm leading-relaxed text-white/70">Hardware, software, licenciamiento y soluciones empresariales de marcas líderes.</p>
-        </div>
+        <article class="fade-up rounded-lg border border-toyo-silver bg-white p-8 shadow-sm transition hover:border-toyo-cyan/50 hover:shadow-md">
+          <i data-lucide="monitor" class="text-toyo-blue" style="width: 30px; height: 30px;"></i>
+          <h3 class="mt-5 text-xl font-bold text-toyo-navy">Equipo de computo e infraestructura</h3>
+          <p class="mt-3 text-sm leading-relaxed text-toyo-steel">Laptops, desktops, tablets, monitores, servidores, perifericos, accesorios, garantias extendidas, renovacion tecnologica y arrendamiento, con respaldo de marcas como Lenovo.</p>
+        </article>
+        <article class="fade-up rounded-lg border border-toyo-silver bg-white p-8 shadow-sm transition hover:border-toyo-cyan/50 hover:shadow-md" style="transition-delay: 0.05s;">
+          <i data-lucide="printer" class="text-toyo-blue" style="width: 30px; height: 30px;"></i>
+          <h3 class="mt-5 text-xl font-bold text-toyo-navy">Impresion y fotocopiado administrado</h3>
+          <p class="mt-3 text-sm leading-relaxed text-toyo-steel">Multifuncionales, copiadoras, impresoras, consumibles, polizas de mantenimiento, costo por pagina, monitoreo de equipos y soporte.</p>
+        </article>
+        <article class="fade-up rounded-lg border border-toyo-silver bg-white p-8 shadow-sm transition hover:border-toyo-cyan/50 hover:shadow-md" style="transition-delay: 0.1s;">
+          <i data-lucide="tablet-smartphone" class="text-toyo-blue" style="width: 30px; height: 30px;"></i>
+          <h3 class="mt-5 text-xl font-bold text-toyo-navy">Movilidad empresarial</h3>
+          <p class="mt-3 text-sm leading-relaxed text-toyo-steel">Tablets, smartphones, equipos rugged, MDM, Samsung Knox, configuracion masiva, enrolamiento, control de inventario, soporte y reemplazo.</p>
+        </article>
+        <article class="fade-up rounded-lg border border-toyo-silver bg-white p-8 shadow-sm transition hover:border-toyo-cyan/50 hover:shadow-md" style="transition-delay: 0.15s;">
+          <i data-lucide="radio-tower" class="text-toyo-blue" style="width: 30px; height: 30px;"></i>
+          <h3 class="mt-5 text-xl font-bold text-toyo-navy">Telefonia movil y conectividad</h3>
+          <p class="mt-3 text-sm leading-relaxed text-toyo-steel">Lineas moviles empresariales, datos, SIM/eSIM, administracion de consumos, planes corporativos, control por usuario, reportes y soporte.</p>
+        </article>
+        <article class="fade-up rounded-lg border border-toyo-silver bg-white p-8 shadow-sm transition hover:border-toyo-cyan/50 hover:shadow-md" style="transition-delay: 0.2s;">
+          <i data-lucide="key-round" class="text-toyo-blue" style="width: 30px; height: 30px;"></i>
+          <h3 class="mt-5 text-xl font-bold text-toyo-navy">Licenciamiento y productividad</h3>
+          <p class="mt-3 text-sm leading-relaxed text-toyo-steel">Correo empresarial, colaboracion, seguridad, respaldo, antivirus, Microsoft 365, Google Workspace y otras soluciones de productividad.</p>
+        </article>
+        <article class="fade-up rounded-lg border border-toyo-silver bg-white p-8 shadow-sm transition hover:border-toyo-cyan/50 hover:shadow-md" style="transition-delay: 0.25s;">
+          <i data-lucide="settings-2" class="text-toyo-blue" style="width: 30px; height: 30px;"></i>
+          <h3 class="mt-5 text-xl font-bold text-toyo-navy">Servicios administrados</h3>
+          <p class="mt-3 text-sm leading-relaxed text-toyo-steel">Mesa de ayuda, instalacion, configuracion, mantenimiento, gestion de activos, reportes, soporte operativo y administracion del ciclo de vida tecnologico, incluyendo capacidades de gestion con Ivanti.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <section id="capacidades" class="bg-white py-24">
+  <section id="administrados" class="bg-toyo-navy py-24 text-white">
     <div class="mx-auto max-w-7xl px-6">
-      <div class="fade-up mb-4">
-        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-tk-mid">Capacidades</span>
-      </div>
-      <h2 class="font-serif-display fade-up mb-4 max-w-3xl text-3xl leading-tight text-tk-blue md:text-5xl">
-        De la consultoría a la operación: un ciclo completo.
-      </h2>
-      <p class="fade-up mb-16 max-w-2xl text-lg text-tk-steel">
-        TKINOV integra cada fase del ciclo tecnológico en una sola operación.
-      </p>
-      <div class="fade-up relative">
-        <div
-          class="absolute left-0 right-0 top-1/2 hidden h-0.5 -translate-y-1/2 bg-gradient-to-r from-tk-blue via-tk-mid to-tk-light opacity-20 lg:block"
-        ></div>
-        <div class="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-7">
-          <div class="group relative text-center">
-            <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-tk-blue shadow-lg shadow-tk-blue/20 transition-transform group-hover:scale-110">
-              <i data-lucide="message-circle" style="width: 24px; height: 24px; color: white;"></i>
-            </div>
-            <p class="text-sm font-semibold text-tk-blue">Consultoría</p>
-            <p class="mt-1 text-xs text-tk-steel">Diagnóstico y estrategia</p>
-          </div>
-          <div class="group relative text-center">
-            <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-tk-blue/90 shadow-lg shadow-tk-blue/15 transition-transform group-hover:scale-110">
-              <i data-lucide="pen-tool" style="width: 24px; height: 24px; color: white;"></i>
-            </div>
-            <p class="text-sm font-semibold text-tk-blue">Diseño</p>
-            <p class="mt-1 text-xs text-tk-steel">Arquitectura de solución</p>
-          </div>
-          <div class="group relative text-center">
-            <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-tk-mid shadow-lg shadow-tk-mid/15 transition-transform group-hover:scale-110">
-              <i data-lucide="package" style="width: 24px; height: 24px; color: white;"></i>
-            </div>
-            <p class="text-sm font-semibold text-tk-blue">Suministro</p>
-            <p class="mt-1 text-xs text-tk-steel">Tecnología y equipamiento</p>
-          </div>
-          <div class="group relative text-center">
-            <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-tk-mid/90 shadow-lg shadow-tk-mid/10 transition-transform group-hover:scale-110">
-              <i data-lucide="code-2" style="width: 24px; height: 24px; color: white;"></i>
-            </div>
-            <p class="text-sm font-semibold text-tk-blue">Desarrollo</p>
-            <p class="mt-1 text-xs text-tk-steel">Software a la medida</p>
-          </div>
-          <div class="group relative text-center">
-            <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-tk-light shadow-lg shadow-tk-light/10 transition-transform group-hover:scale-110">
-              <i data-lucide="rocket" style="width: 24px; height: 24px; color: white;"></i>
-            </div>
-            <p class="text-sm font-semibold text-tk-blue">Implementación</p>
-            <p class="mt-1 text-xs text-tk-steel">Despliegue y puesta en marcha</p>
-          </div>
-          <div class="group relative text-center">
-            <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-tk-steel shadow-lg shadow-tk-steel/10 transition-transform group-hover:scale-110">
-              <i data-lucide="activity" style="width: 24px; height: 24px; color: white;"></i>
-            </div>
-            <p class="text-sm font-semibold text-tk-blue">Operación</p>
-            <p class="mt-1 text-xs text-tk-steel">Gestión continua</p>
-          </div>
-          <div class="group relative text-center">
-            <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-tk-gray shadow-lg shadow-tk-gray/10 transition-transform group-hover:scale-110">
-              <i data-lucide="headphones" style="width: 24px; height: 24px; color: white;"></i>
-            </div>
-            <p class="text-sm font-semibold text-tk-blue">Soporte</p>
-            <p class="mt-1 text-xs text-tk-steel">Acompañamiento y mejora</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="ecosistema" class="bg-tk-ice py-24">
-    <div class="mx-auto max-w-7xl px-6">
-      <div class="fade-up mb-4">
-        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-tk-mid">Ecosistema empresarial</span>
-      </div>
-      <h2 class="font-serif-display fade-up mb-4 max-w-3xl text-3xl leading-tight text-tk-blue md:text-5xl">
-        Un ecosistema diseñado para ejecutar.
-      </h2>
-      <p class="fade-up mb-14 max-w-2xl text-lg text-tk-steel">
-        TKINOV opera como eje de un grupo empresarial con capacidades complementarias.
-      </p>
-      <div class="grid gap-6 md:grid-cols-3">
-        <div class="fade-up rounded-xl border border-tk-silver/60 bg-white p-8 transition-all hover:border-tk-blue/20">
-          <div class="mb-5 flex items-center gap-3">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-tk-blue">
-              <i data-lucide="smartphone" style="width: 22px; height: 22px; color: white;"></i>
-            </div>
-            <h3 class="text-xl font-bold text-tk-blue">TKMOVIL</h3>
-          </div>
-          <p class="text-sm leading-relaxed text-tk-steel">
-            Conectividad, movilidad y acceso a soluciones tecnológicas para empleados y organizaciones. Planes, dispositivos y gestión de comunicaciones empresariales.
-          </p>
-        </div>
-        <div class="fade-up rounded-xl border border-tk-silver/60 bg-white p-8 transition-all hover:border-tk-blue/20" style="transition-delay: 0.08s;">
-          <div class="mb-5 flex items-center gap-3">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-tk-blue">
-              <i data-lucide="shield" style="width: 22px; height: 22px; color: white;"></i>
-            </div>
-            <h3 class="text-xl font-bold text-tk-blue">DRAKON</h3>
-          </div>
-          <p class="text-sm leading-relaxed text-tk-steel">
-            Experiencia operativa, ejecución especializada y soporte a despliegues tecnológicos. Equipo de campo, logística de implementación y operación de proyectos.
-          </p>
-        </div>
-        <div class="fade-up rounded-xl border border-tk-silver/60 bg-white p-8 transition-all hover:border-tk-blue/20" style="transition-delay: 0.16s;">
-          <div class="mb-5 flex items-center gap-3">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-tk-blue">
-              <i data-lucide="building-2" style="width: 22px; height: 22px; color: white;"></i>
-            </div>
-            <h3 class="text-xl font-bold tracking-tight text-tk-blue" style="font-size: 1.1rem;">
-              TOYO COMERCIALIZADORA
-            </h3>
-          </div>
-          <p class="text-sm leading-relaxed text-tk-steel">
-            Comercialización e integración de tecnología, equipo de cómputo y soluciones empresariales. Suministro, distribución y logística tecnológica.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-white py-20">
-    <div class="mx-auto max-w-7xl px-6">
-      <div class="fade-up mb-14 text-center">
-        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-tk-mid">Marcas y aliados estratégicos</span>
-        <h2 class="font-serif-display mt-3 text-3xl text-tk-blue md:text-4xl">
-          Aliados tecnológicos de clase mundial.
-        </h2>
-      </div>
-      <div class="grid grid-cols-2 gap-6 md:grid-cols-4">
-        <div class="fade-up rounded-xl border border-tk-silver/40 bg-tk-ice p-8 text-center transition-all hover:border-tk-blue/20">
-          <div class="mb-3 text-3xl font-bold tracking-tight text-tk-blue/80">Samsung</div>
-          <p class="text-xs leading-relaxed text-tk-steel">Dispositivos móviles, displays y soluciones empresariales de movilidad.</p>
-        </div>
-        <div class="fade-up rounded-xl border border-tk-silver/40 bg-tk-ice p-8 text-center transition-all hover:border-tk-blue/20" style="transition-delay: 0.06s;">
-          <div class="mb-3 text-3xl font-bold tracking-tight text-tk-blue/80">Lenovo</div>
-          <p class="text-xs leading-relaxed text-tk-steel">Equipamiento de cómputo, servidores e infraestructura tecnológica.</p>
-        </div>
-        <div class="fade-up rounded-xl border border-tk-silver/40 bg-tk-ice p-8 text-center transition-all hover:border-tk-blue/20" style="transition-delay: 0.12s;">
-          <div class="mb-3 text-3xl font-bold tracking-tight text-tk-blue/80">SOTI</div>
-          <p class="text-xs leading-relaxed text-tk-steel">Gestión de dispositivos móviles y soluciones de movilidad empresarial.</p>
-        </div>
-        <div class="fade-up rounded-xl border border-tk-silver/40 bg-tk-ice p-8 text-center transition-all hover:border-tk-blue/20" style="transition-delay: 0.18s;">
-          <div class="mb-3 text-3xl font-bold tracking-tight text-tk-blue/80">Veridas</div>
-          <p class="text-xs leading-relaxed text-tk-steel">Identidad digital, biometría y verificación de identidad segura.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="relative overflow-hidden bg-tk-blue py-24">
-    <div
-      class="absolute inset-0 opacity-[0.03]"
-      style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"
-    ></div>
-    <div class="relative mx-auto max-w-7xl px-6">
-      <div class="fade-up mb-14 text-center">
-        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-tk-light">Sectores</span>
-        <h2 class="font-serif-display mt-3 text-3xl text-white md:text-5xl">
-          Presencia en sectores estratégicos.
-        </h2>
-      </div>
-      <div class="grid grid-cols-2 gap-5 md:grid-cols-5">
-        <div class="group fade-up text-center">
-          <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border border-white/10 bg-white/10 transition-all group-hover:bg-white/20">
-            <i data-lucide="landmark" style="width: 30px; height: 30px; color: white;"></i>
-          </div>
-          <p class="text-sm font-medium text-white">Gobierno</p>
-        </div>
-        <div class="group fade-up text-center" style="transition-delay: 0.06s;">
-          <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border border-white/10 bg-white/10 transition-all group-hover:bg-white/20">
-            <i data-lucide="banknote" style="width: 30px; height: 30px; color: white;"></i>
-          </div>
-          <p class="text-sm font-medium text-white">Financiero</p>
-        </div>
-        <div class="group fade-up text-center" style="transition-delay: 0.12s;">
-          <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border border-white/10 bg-white/10 transition-all group-hover:bg-white/20">
-            <i data-lucide="radio-tower" style="width: 30px; height: 30px; color: white;"></i>
-          </div>
-          <p class="text-sm font-medium text-white">Telecomunicaciones</p>
-        </div>
-        <div class="group fade-up text-center" style="transition-delay: 0.18s;">
-          <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border border-white/10 bg-white/10 transition-all group-hover:bg-white/20">
-            <i data-lucide="building" style="width: 30px; height: 30px; color: white;"></i>
-          </div>
-          <p class="text-sm font-medium text-white">Corporativos</p>
-        </div>
-        <div class="group fade-up col-span-2 text-center md:col-span-1" style="transition-delay: 0.24s;">
-          <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-2xl border border-white/10 bg-white/10 transition-all group-hover:bg-white/20">
-            <i data-lucide="truck" style="width: 30px; height: 30px; color: white;"></i>
-          </div>
-          <p class="text-sm font-medium text-white">Operaciones de campo</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-white py-24">
-    <div class="mx-auto max-w-7xl px-6">
-      <div class="fade-up mb-14 text-center">
-        <span class="text-xs font-semibold uppercase tracking-[0.2em] text-tk-mid">¿Por qué TKINOV?</span>
-        <h2 class="font-serif-display mt-3 text-3xl text-tk-blue md:text-5xl">Lo que nos distingue.</h2>
-      </div>
-      <div class="grid gap-8 md:grid-cols-3">
-        <div class="fade-up text-center">
-          <div class="float-anim mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-tk-blue to-tk-mid shadow-xl shadow-tk-blue/15">
-            <i data-lucide="link" style="width: 30px; height: 30px; color: white;"></i>
-          </div>
-          <h3 class="mb-3 text-xl font-semibold text-tk-blue">Integración de punta a punta</h3>
-          <p class="text-sm leading-relaxed text-tk-steel">
-            Desde la consultoría inicial hasta la operación continua. Un solo socio para todo el ciclo tecnológico.
-          </p>
-        </div>
-        <div class="fade-up text-center" style="transition-delay: 0.1s;">
-          <div class="float-anim mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-tk-mid to-tk-light shadow-xl shadow-tk-mid/15" style="animation-delay: 0.5s;">
-            <i data-lucide="cpu" style="width: 30px; height: 30px; color: white;"></i>
-          </div>
-          <h3 class="mb-3 text-xl font-semibold text-tk-blue">Experiencia tecnológica y operativa</h3>
-          <p class="text-sm leading-relaxed text-tk-steel">
-            Combinamos conocimiento técnico profundo con capacidad real de ejecución en campo y en plataforma.
-          </p>
-        </div>
-        <div class="fade-up text-center" style="transition-delay: 0.2s;">
-          <div class="float-anim mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-tk-light to-tk-steel shadow-xl shadow-tk-light/15" style="animation-delay: 1s;">
-            <i data-lucide="trending-up" style="width: 30px; height: 30px; color: white;"></i>
-          </div>
-          <h3 class="mb-3 text-xl font-semibold text-tk-blue">Soluciones escalables</h3>
-          <p class="text-sm leading-relaxed text-tk-steel">
-            Diseñamos con visión de crecimiento. Nuestras soluciones se adaptan y crecen con las necesidades de cada cliente.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto" class="bg-tk-ice py-24">
-    <div class="mx-auto max-w-7xl px-6">
-      <div class="fade-up relative overflow-hidden rounded-2xl bg-tk-blue p-10 text-center md:p-16">
-        <div
-          class="absolute inset-0 opacity-[0.04]"
-          style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"
-        ></div>
-        <div class="relative">
-          <h2 class="font-serif-display mb-4 text-3xl text-white md:text-5xl">
-            ¿Listo para comenzar un proyecto?
+      <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+        <div class="fade-up">
+          <span class="section-kicker text-toyo-cyan">Servicios administrados</span>
+          <h2 class="font-serif-display mt-4 text-3xl leading-tight md:text-5xl">
+            Operamos la tecnologia contigo.
           </h2>
-          <p class="mx-auto mb-10 max-w-xl text-lg text-white/70">
-            Contáctanos y descubre cómo podemos integrar la solución tecnológica que tu organización necesita.
+          <p class="mt-6 text-lg leading-relaxed text-white/72">
+            Convertimos el suministro tecnologico en una operacion controlada, medible y acompanada durante todo el ciclo de vida.
           </p>
-          <form id="contactForm" class="mx-auto max-w-lg">
-            <div class="mb-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              <div>
-                <label for="contactName" class="sr-only">Nombre</label>
-                <input
-                  id="contactName"
-                  name="name"
-                  type="text"
-                  placeholder="Tu nombre"
-                  class="contact-input"
-                  required
-                >
-              </div>
-              <div>
-                <label for="contactEmail" class="sr-only">Correo</label>
-                <input
-                  id="contactEmail"
-                  name="email"
-                  type="email"
-                  placeholder="correo@empresa.com"
-                  class="contact-input"
-                  required
-                >
-              </div>
-            </div>
-            <div class="mb-4">
-              <label for="contactMsg" class="sr-only">Mensaje</label>
-              <textarea
-                id="contactMsg"
-                name="message"
-                placeholder="Cuéntanos sobre tu proyecto..."
-                rows="3"
-                class="contact-input resize-none"
-                required
-              ></textarea>
-            </div>
-            <div class="sr-only-field" aria-hidden="true">
-              <label for="contactWebsite">No llenar este campo</label>
-              <input
-                id="contactWebsite"
-                name="website"
-                type="text"
-                tabindex="-1"
-                autocomplete="off"
-              >
-            </div>
-            <button
-              id="contactSubmit"
-              type="submit"
-              class="rounded-lg bg-white px-8 py-3.5 font-semibold text-tk-blue shadow-lg transition-all hover:bg-tk-silver"
-            >
-              Enviar mensaje
-            </button>
-            <p id="formSuccess" class="contact-status contact-status--success hidden">
-              Mensaje enviado. Nos pondremos en contacto contigo pronto.
-            </p>
-            <p id="formError" class="contact-status contact-status--error hidden">
-              No pudimos enviar tu mensaje. Intenta de nuevo en unos minutos.
-            </p>
-          </form>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="fade-up rounded-lg border border-white/10 bg-white/[0.08] p-5">Instalacion y configuracion inicial</div>
+          <div class="fade-up rounded-lg border border-white/10 bg-white/[0.08] p-5" style="transition-delay: 0.04s;">Enrolamiento de dispositivos</div>
+          <div class="fade-up rounded-lg border border-white/10 bg-white/[0.08] p-5" style="transition-delay: 0.08s;">Administracion de inventario</div>
+          <div class="fade-up rounded-lg border border-white/10 bg-white/[0.08] p-5" style="transition-delay: 0.12s;">Mesa de ayuda</div>
+          <div class="fade-up rounded-lg border border-white/10 bg-white/[0.08] p-5" style="transition-delay: 0.16s;">Gestion de garantias</div>
+          <div class="fade-up rounded-lg border border-white/10 bg-white/[0.08] p-5" style="transition-delay: 0.2s;">Reemplazo y soporte</div>
+          <div class="fade-up rounded-lg border border-white/10 bg-white/[0.08] p-5" style="transition-delay: 0.24s;">Reportes ejecutivos</div>
+          <div class="fade-up rounded-lg border border-white/10 bg-white/[0.08] p-5" style="transition-delay: 0.28s;">Mantenimiento preventivo y correctivo</div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="bg-tk-gray py-14">
+  <section id="sectores" class="bg-white py-24">
     <div class="mx-auto max-w-7xl px-6">
-      <div class="mb-10 grid gap-10 md:grid-cols-4">
-        <div>
-          <div class="mb-4 flex items-center gap-2">
-            <img
-              src="./assets/Logo_tkinov.png"
-              alt="Logo de TKINOV"
-              class="brand-logo brand-logo--footer"
-            >
+      <div class="fade-up mb-14 text-center">
+        <span class="section-kicker">Sectores</span>
+        <h2 class="font-serif-display mt-4 text-3xl text-toyo-navy md:text-5xl">
+          Atendemos operaciones que dependen de tecnologia confiable.
+        </h2>
+      </div>
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <div class="fade-up rounded-lg bg-toyo-ice p-6 text-center font-semibold text-toyo-navy">Empresas corporativas</div>
+        <div class="fade-up rounded-lg bg-toyo-ice p-6 text-center font-semibold text-toyo-navy" style="transition-delay: 0.04s;">Gobierno</div>
+        <div class="fade-up rounded-lg bg-toyo-ice p-6 text-center font-semibold text-toyo-navy" style="transition-delay: 0.08s;">Instituciones financieras</div>
+        <div class="fade-up rounded-lg bg-toyo-ice p-6 text-center font-semibold text-toyo-navy" style="transition-delay: 0.12s;">Educacion</div>
+        <div class="fade-up rounded-lg bg-toyo-ice p-6 text-center font-semibold text-toyo-navy" style="transition-delay: 0.16s;">Retail y cadenas comerciales</div>
+        <div class="fade-up rounded-lg bg-toyo-ice p-6 text-center font-semibold text-toyo-navy" style="transition-delay: 0.2s;">Salud</div>
+        <div class="fade-up rounded-lg bg-toyo-ice p-6 text-center font-semibold text-toyo-navy" style="transition-delay: 0.24s;">Operaciones de campo</div>
+        <div class="fade-up rounded-lg bg-toyo-ice p-6 text-center font-semibold text-toyo-navy" style="transition-delay: 0.28s;">Centros de atencion y sucursales</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="aliados" class="bg-toyo-ice py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+        <div class="fade-up">
+          <span class="section-kicker">Marcas y aliados</span>
+          <h2 class="font-serif-display mt-4 text-3xl leading-tight text-toyo-navy md:text-5xl">
+            Tecnologia de marcas lideres, integrada para tu operacion.
+          </h2>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="fade-up rounded-lg border border-toyo-silver bg-white p-6">
+            <h3 class="font-bold text-toyo-navy">Lenovo</h3>
+            <p class="mt-2 text-sm text-toyo-steel">Equipos de computo empresarial, accesorios, estaciones de trabajo, renovacion tecnologica y soporte para organizaciones.</p>
           </div>
-          <p class="text-sm leading-relaxed text-white/50">
-            Soluciones tecnológicas integrales para empresas, gobierno y sectores estratégicos en México.
+          <div class="fade-up rounded-lg border border-toyo-silver bg-white p-6" style="transition-delay: 0.06s;">
+            <h3 class="font-bold text-toyo-navy">Ivanti</h3>
+            <p class="mt-2 text-sm text-toyo-steel">Gestion de endpoints, automatizacion de servicios, seguridad operativa, inventario y administracion del ciclo de vida tecnologico.</p>
+          </div>
+          <div class="fade-up rounded-lg border border-toyo-silver bg-white p-6" style="transition-delay: 0.12s;">
+            <h3 class="font-bold text-toyo-navy">Impresion y documento</h3>
+            <p class="mt-2 text-sm text-toyo-steel">Multifuncionales, consumibles, mantenimiento y costo por pagina.</p>
+          </div>
+          <div class="fade-up rounded-lg border border-toyo-silver bg-white p-6" style="transition-delay: 0.18s;">
+            <h3 class="font-bold text-toyo-navy">Movilidad y conectividad</h3>
+            <p class="mt-2 text-sm text-toyo-steel">Smartphones, tablets, lineas, datos, MDM, enrolamiento y soporte para usuarios finales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="financiamiento" class="bg-white py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="fade-up rounded-xl border border-toyo-silver bg-toyo-ice p-8 md:p-12">
+        <div class="grid gap-8 md:grid-cols-[0.95fr_1.05fr]">
+          <div>
+            <span class="section-kicker">Financiamiento y arrendamiento</span>
+            <h2 class="font-serif-display mt-4 text-3xl leading-tight text-toyo-navy md:text-5xl">
+              Opciones comerciales flexibles.
+            </h2>
+          </div>
+          <p class="text-lg leading-relaxed text-toyo-steel">
+            Ofrecemos esquemas de venta, arrendamiento, renovacion tecnologica y proyectos llave en mano, adaptandonos a las necesidades operativas, presupuestales y administrativas de cada organizacion.
           </p>
         </div>
-        <nav aria-label="Soluciones">
-          <h4 class="mb-4 text-sm font-semibold text-white">Soluciones</h4>
-          <ul class="space-y-2 text-sm text-white/50">
-            <li>Telecomunicaciones</li>
-            <li>Desarrollo de software</li>
-            <li>Gobierno</li>
-            <li>Sector financiero</li>
-          </ul>
-        </nav>
-        <nav aria-label="Empresa">
-          <h4 class="mb-4 text-sm font-semibold text-white">Empresa</h4>
-          <ul class="space-y-2 text-sm text-white/50">
-            <li>Nosotros</li>
-            <li>Capacidades</li>
-            <li>Ecosistema</li>
-            <li>Aliados</li>
-          </ul>
-        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="bg-toyo-navy py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+        <div class="fade-up text-white">
+          <span class="section-kicker text-toyo-cyan">Contacto</span>
+          <h2 class="font-serif-display mt-4 text-3xl leading-tight md:text-5xl">
+            Hablemos de tu proximo proyecto tecnologico.
+          </h2>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-white/72">
+            Cuentanos que necesita tu organizacion. En Toyo podemos ayudarte a seleccionar, suministrar, configurar y administrar la tecnologia que requiere tu operacion.
+          </p>
+          <div class="mt-8 space-y-3 text-white/80">
+            <p class="flex items-center gap-3"><i data-lucide="mail" style="width: 18px; height: 18px;"></i> contacto@toyocm.com.mx</p>
+            <p class="flex items-center gap-3"><i data-lucide="map-pin" style="width: 18px; height: 18px;"></i> Mexico</p>
+          </div>
+        </div>
+        <form id="contactForm" class="fade-up rounded-xl bg-white p-8 shadow-xl" style="transition-delay: 0.12s;">
+          <div class="mb-4 grid gap-4 sm:grid-cols-2">
+            <div>
+              <label for="contactName" class="mb-2 block text-sm font-bold text-toyo-navy">Nombre</label>
+              <input id="contactName" name="name" type="text" class="contact-input" required>
+            </div>
+            <div>
+              <label for="contactEmail" class="mb-2 block text-sm font-bold text-toyo-navy">Correo</label>
+              <input id="contactEmail" name="email" type="email" class="contact-input" required>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label for="contactCompany" class="mb-2 block text-sm font-bold text-toyo-navy">Empresa</label>
+            <input id="contactCompany" name="company" type="text" class="contact-input">
+          </div>
+          <div class="mb-5">
+            <label for="contactMsg" class="mb-2 block text-sm font-bold text-toyo-navy">Mensaje</label>
+            <textarea id="contactMsg" name="message" rows="4" class="contact-input resize-none" required></textarea>
+          </div>
+          <button type="submit" class="w-full rounded-lg bg-toyo-navy px-8 py-3.5 font-bold text-white transition hover:bg-toyo-blue">
+            Solicitar contacto
+          </button>
+          <p id="formHelp" class="mt-4 text-sm leading-relaxed text-toyo-steel">
+            Se abrira tu cliente de correo para enviar la solicitud. Podemos conectar este formulario a Azure Logic Apps cuando quede definido el endpoint.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-toyo-graphite py-12 text-white">
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-6 px-6 md:flex-row md:items-center">
+      <div class="flex items-center gap-3">
+        <span class="brand-mark bg-white text-toyo-navy">T</span>
         <div>
-          <h4 class="mb-4 text-sm font-semibold text-white">Contacto</h4>
-          <p class="text-sm leading-relaxed text-white/50">
-            contacto@tkinov.com<br>
-            Ciudad de México, México
-          </p>
+          <p class="font-extrabold">TOYO Soluciones Tecnologicas</p>
+          <p class="text-sm text-white/50">Tecnologia administrada para empresas e instituciones.</p>
         </div>
       </div>
-      <div class="flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 md:flex-row">
-        <p class="text-xs text-white/30">© 2026 TKINOV. Todos los derechos reservados.</p>
-        <div class="flex gap-4">
-          <a href="#" aria-label="LinkedIn de TKINOV" class="cursor-pointer text-white/30 transition hover:text-white/60">
-            <i data-lucide="linkedin" style="width: 18px; height: 18px;"></i>
-          </a>
-          <a href="mailto:contacto@tkinov.com" aria-label="Enviar correo a TKINOV" class="cursor-pointer text-white/30 transition hover:text-white/60">
-            <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
-          </a>
-        </div>
-      </div>
+      <p class="text-sm text-white/50">© 2026 TOYO COMERCIALIZADORA DEL MAYAB, S. de R.L. de C.V.</p>
     </div>
   </footer>
 
   <a
-    href="https://wa.me/525652245177?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20soluciones%20tecnol%C3%B3gicas."
+    href="mailto:contacto@toyocm.com.mx?subject=Solicitud%20de%20informacion%20Toyo"
     class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contactar por WhatsApp a TKINOV"
+    aria-label="Contactar a Toyo por correo"
   >
     <span class="whatsapp-float__icon">
-      <i data-lucide="message-circle-more" style="width: 22px; height: 22px;"></i>
+      <i data-lucide="mail" style="width: 21px; height: 21px;"></i>
     </span>
-    <span class="whatsapp-float__text">
-      <span class="whatsapp-float__label">WhatsApp</span>
-      <span class="whatsapp-float__number">+52 56 5224 5177</span>
-    </span>
+    <span class="text-sm font-bold">Solicitar cotizacion</span>
   </a>
 
   <script>
-    const FORM_ENDPOINT = "https://prod-12.northcentralus.logic.azure.com:443/workflows/7f5655923ace42b1bf9330cb687afd86/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=mUQg2ji4DeTVxD9urYAYprudNT_qRRLt4lhMdaYw4mg";
-
     document.addEventListener("DOMContentLoaded", () => {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -966,7 +583,7 @@
           event.preventDefault();
           target.scrollIntoView({ behavior: "smooth" });
 
-          if (mobileMenu) {
+          if (mobileMenu && mobileMenuBtn) {
             mobileMenu.classList.add("hidden");
             mobileMenuBtn.setAttribute("aria-expanded", "false");
           }
@@ -974,64 +591,25 @@
       });
 
       const contactForm = document.getElementById("contactForm");
-      const formSuccess = document.getElementById("formSuccess");
-      const formError = document.getElementById("formError");
-      const contactSubmit = document.getElementById("contactSubmit");
 
-      if (contactForm && formSuccess && formError && contactSubmit) {
-        contactForm.addEventListener("submit", async (event) => {
+      if (contactForm) {
+        contactForm.addEventListener("submit", (event) => {
           event.preventDefault();
-          formSuccess.classList.add("hidden");
-          formError.classList.add("hidden");
 
           const formData = new FormData(contactForm);
-          const payload = {
-            name: String(formData.get("name") || "").trim(),
-            email: String(formData.get("email") || "").trim(),
-            message: String(formData.get("message") || "").trim(),
-            website: String(formData.get("website") || "").trim(),
-            source: window.location.hostname,
-            submittedAt: new Date().toISOString()
-          };
+          const subject = encodeURIComponent("Solicitud de contacto Toyo");
+          const body = encodeURIComponent(
+            [
+              "Nombre: " + String(formData.get("name") || ""),
+              "Correo: " + String(formData.get("email") || ""),
+              "Empresa: " + String(formData.get("company") || ""),
+              "",
+              "Mensaje:",
+              String(formData.get("message") || "")
+            ].join("\n")
+          );
 
-          if (payload.website) {
-            contactForm.reset();
-            formSuccess.classList.remove("hidden");
-            return;
-          }
-
-          if (!FORM_ENDPOINT) {
-            formError.textContent = "Falta configurar la URL de Azure Logic Apps para este formulario.";
-            formError.classList.remove("hidden");
-            return;
-          }
-
-          contactSubmit.disabled = true;
-          contactSubmit.textContent = "Enviando...";
-
-          try {
-            const response = await fetch(FORM_ENDPOINT, {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json"
-              },
-              body: JSON.stringify(payload)
-            });
-
-            if (!response.ok) {
-              throw new Error(`HTTP ${response.status}`);
-            }
-
-            contactForm.reset();
-            formSuccess.classList.remove("hidden");
-          } catch (error) {
-            console.error("Error sending contact form", error);
-            formError.textContent = "No pudimos enviar tu mensaje. Intenta de nuevo en unos minutos.";
-            formError.classList.remove("hidden");
-          } finally {
-            contactSubmit.disabled = false;
-            contactSubmit.textContent = "Enviar mensaje";
-          }
+          window.location.href = "mailto:contacto@toyocm.com.mx?subject=" + subject + "&body=" + body;
         });
       }
 
@@ -1044,10 +622,10 @@
         }
 
         if (scrollY > 60) {
-          nav.style.background = "rgba(255, 255, 255, 0.95)";
-          nav.style.boxShadow = "0 1px 20px rgba(0, 0, 0, 0.06)";
+          nav.style.background = "rgba(255, 255, 255, 0.97)";
+          nav.style.boxShadow = "0 1px 22px rgba(19, 52, 93, 0.08)";
         } else {
-          nav.style.background = "rgba(255, 255, 255, 0.85)";
+          nav.style.background = "rgba(255, 255, 255, 0.9)";
           nav.style.boxShadow = "none";
         }
       });
