@@ -57,7 +57,7 @@ Configuracion sugerida:
 
 ## Pendientes antes de produccion
 
-- Reemplazar el wordmark temporal por el logotipo oficial de Toyo.
+- Agregar el logotipo oficial de Toyo en `assets/logo-toyo.png`.
 - Confirmar correo, telefono y WhatsApp de contacto.
 - Crear una Azure Static Web App nueva para Toyo.
 - Actualizar el workflow con el secret generado por Azure para Toyo.
